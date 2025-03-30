@@ -136,24 +136,8 @@
     }
 }
 
-.share-product {
-    display: flex;
-    align-items: center;
-    font-family: Monsterrat, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #071739;
-    margin-bottom: 60px;
-    padding-top: 40px;
-}
-
-.share-socials {
-    margin-left: 20px;
-}
-
-.share-socials a:not(:last-child) {
-    margin-right: 13px;
-    text-decoration: none;
+.comments {
+    margin-top: 63px;
 }
 
 .comments-title {
