@@ -1,0 +1,204 @@
+.blog {
+    padding-top: 77px;
+    padding-bottom: 65px;
+}
+
+.blog-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 38px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.blog-sorting {
+    width: 190px;
+    min-width: 190px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.blog-sorting-head {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 23px;
+    justify-content: space-between;
+    color: #2c2c2c;
+}
+
+.blog-sorting-head span {
+    margin-right: 18px;
+}
+
+.blog-sorting-body {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    padding: 12px 23px;
+    background: #f5f5f5;
+    border-radius: 0 0 5px 5px;
+    color: #8e8e8e;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-sorting-item {
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.blog-sorting-item:last-child {
+    margin-bottom: 0;
+}
+
+.blog-sorting-item:hover {
+    color: #313131;
+}
+
+.blog-sorting:hover .blog-sorting-body {
+    display: block;
+    opacity: 1;
+}
+
+.blog-sorting:hover .blog-sorting-head {
+    color: #000;
+    border-radius: 5px 5px 0 0;
+    background: #ebebeb;
+    padding-right: 23px;
+}
+
+.blog-filter {
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.blog-filter-head {
+    background: #fcdc55;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 23px;
+    cursor: pointer;
+}
+
+.blog-filter-head svg {
+    margin-top: 2px;
+}
+
+.blog-filter:hover .blog-filter-head, .blog-filter.open .blog-filter-head {
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-filter-body {
+    display: none;
+    border: 1px solid #fcdc55;
+    border-radius: 0 0 5px 5px;
+    padding: 12px 16px;
+}
+
+.blog-filter-checkbox {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 19px;
+    line-height: 130%;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.blog-filter-checkbox:hover {
+    color: #b69d35;
+}
+
+.blog-filter-checkbox:last-child {
+    margin-bottom: 0;
+}
+
+.blog-filter-checkbox input {
+    margin-right: 10px;
+}
+
+.blog-filter:hover .blog-filter-body, .blog-filter.open .blog-filter-body {
+    display: block;
+}
+
+.blog-layout {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-filters {
+    width: 257px;
+    min-width: 257px;
+}
+
+.blog-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 24px;
+}
+
+.product-card {
+    width: 292px;
+    height: 303px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #F5F5F5;
+}
+
+.product-card-image {
+    border-radius: 5px;
+    width: 292px;
+    height: 195px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-category {
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    border-radius: 5px;
+    padding: 10px 18px;
+    height: 34px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    color: #071739;
+}
+
+.product-card-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 20px;
+    line-height: 130%;
+    color: #071739;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 0 10px;
+}
+
+.product-card-action {
+    margin-top: auto;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+
+.product-card-action a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #071739;
+}
