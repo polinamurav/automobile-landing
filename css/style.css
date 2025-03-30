@@ -1,0 +1,357 @@
+.main {
+    background-color: #000000;
+    padding-bottom: 144px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 50px 0;
+}
+
+.header .logo {
+    /*margin-right: 232px;*/
+}
+
+.phone {
+    font-size: 16px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+.phone:hover {
+    border-bottom: 2px solid white;
+}
+
+.main-content {
+    padding: 34px 0 121px;
+    background-image: url("../images/main-image.png");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 70%;
+    background-position: 145% bottom;
+    overflow: hidden;
+    /*background-position: right;*/
+    /*clip-path: inset(0 30% 0 0);*/
+}
+
+.main-content .container {
+    display: flex;
+    align-items: center;
+}
+
+.main-content-text {
+    max-width: 860px;
+}
+
+.main-content-text h1 {
+    font-size: 64px;
+    color: #fff;
+    font-family: PoppinsSemiBold, sans-serif;
+    line-height: 1.091;
+    margin-bottom: 10px;
+}
+
+.main-content-description {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.389;
+    margin-bottom: 60px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.about {
+    padding: 70px 0 65px;
+}
+
+.about-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.about-actions {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.about-info {
+    max-width: 818px;
+}
+
+.about-info-description {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.about-info-description span {
+    font-family: PoppinsSemiBold, sans-serif;
+}
+
+.about-info-steps-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.about-info-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(164px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    align-items: start;
+}
+
+.about-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-info-item-number {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 13px;
+    border-radius: 50%;
+    background-color: #FCDC55;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-family: PoppinsSemiBold, sans-serif;
+    color: #000000;
+    vertical-align: bottom;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.about-info-item-number span {
+    font-size: 60px;
+    font-family: PoppinsSemiBold, sans-serif;
+    line-height: 44px;
+}
+
+.about-info-item:hover .about-info-item-number {
+    background-color: #ffffff;
+    color: #fcdc55;
+    cursor: pointer;
+}
+
+.about-info-item-title {
+    font-size: 20px;
+    font-family: PoppinsSemiBold, sans-serif;
+    color: #000000;
+    cursor: pointer;
+    max-width: 306px;
+    margin-left: 15px;
+}
+
+.popular {
+    padding: 45px 0 52px;
+}
+
+.popular-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.popular-button {
+    text-align: right;
+    margin-bottom: 26px;
+}
+
+.popular-button .button {
+    font-size: 20px;
+    width: 210px;
+    height: 50px;
+}
+
+.popular-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+}
+
+.popular-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 381px;
+    position: relative;
+}
+
+.popular-item-text {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+}
+
+
+.reviews {
+    padding: 70px 0 68px;
+}
+
+.reviews-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    color: #071739;
+    margin-bottom: 70px;
+}
+
+.reviews-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 60px
+}
+
+.review-item {
+    width: 100%;
+    max-width: 380px;
+    height: 267px;
+    padding: 30px;
+    border: 2px solid #071739;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.review-item-head {
+    display: flex;
+    align-items: center;
+}
+
+.review-item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 25px;
+}
+
+.review-item-name {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #071739;
+}
+
+.review-item-text {
+    font-family: Poppins, sans-serif;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.reviews-arrows {
+    display: flex;
+}
+
+.reviews-arrows a {
+    top: calc(50% - 5px);
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+}
+
+.reviews-arrows a.move-backward {
+    left: 0;
+}
+
+.reviews-arrows a.move-forward {
+    right: 0;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #071739;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: ''; /* Убираем текст "prev"/"next" */
+    font-size: 16px; /* Уменьшаем размер, если нужно */
+    display: block;
+}
+
+
+.contacts {
+    padding-top: 57px;
+    padding-bottom: 106px;
+}
+
+.contacts .container {
+    display: flex;
+    align-items: start;
+}
+
+.contacts-info {
+    margin-left: 26px;
+}
+
+.contacts-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 38px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.contacts-block {
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.contacts-head {
+    font-weight: 500;
+    font-size: 20px;
+    color: #071739;
+    margin-bottom: 10px;
+}
+
+.contacts-body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+    display: block;
+    text-decoration: none;
+}
+
+.contacts-block.contacts-social .contacts-body a:not(:last-child) {
+    margin-right: 20px;
+}
