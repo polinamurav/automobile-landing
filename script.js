@@ -1,21 +1,18 @@
-const swiper = new Swiper('.reviews-carousel', {
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    spaceBetween: 25,
-    slidesPerView: 1,
-    breakpoints: {
-        768: {slidesPerView: 2},
-        1024: {slidesPerView: 3},
-    }
-});
-
 let burger = document.getElementById('burger');
+let menu = document.getElementById('menu');
+let closeMenu = document.getElementById('close-menu');
+let menuLinks = menu.querySelectorAll('a');
+
 burger.onclick = function () {
-    document.getElementById('menu').style.display = 'flex';
-}
-document.getElementById('close-menu').onclick = function () {
-    document.getElementById('menu').style.display = 'none';
+    menu.style.display = 'flex';
 };
+
+closeMenu.onclick = function () {
+    menu.style.display = 'none';
+};
+
+menuLinks.forEach(link => {
+    link.onclick = function () {
+        menu.style.display = 'none';
+    };
+});
