@@ -19,7 +19,7 @@
                 <img src="images/logo.png" alt="Логотип">
             </div>
             <nav class="menu" id="menu">
-                <div class="close">
+                <div class="close" id="close-menu">
                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                          x="0px" y="0px"
                          viewBox="0 0 492 492" xml:space="preserve">
@@ -455,20 +455,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.reviews-carousel', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        spaceBetween: 25,
-        slidesPerView: 1,
-        breakpoints: {
-            768: {slidesPerView: 2},
-            1024: {slidesPerView: 3},
-        }
-    });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
