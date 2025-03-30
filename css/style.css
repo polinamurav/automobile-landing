@@ -210,22 +210,6 @@
     position: relative;
 }
 
-.popular-item:nth-child(1) {
-    background-image: url('../images/popular-1.png');
-}
-
-.popular-item:nth-child(2) {
-    background-image: url('../images/popular-2.png');
-}
-
-.popular-item:nth-child(3) {
-    background-image: url('../images/popular-3.png')
-}
-
-.popular-item:nth-child(4) {
-    background-image: url('../images/popular-4.png');
-}
-
 .popular-item-text {
     position: absolute;
     bottom: 20px;

@@ -1,0 +1,35 @@
+.catalog {
+    padding: 97px 0 133px;
+}
+
+.catalog-title {
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 38px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 55px;
+}
+
+.catalog-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.catalog-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 381px;
+    position: relative;
+}
+
+.catalog-item-text {
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+    font-family: PoppinsSemiBold, sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+}
