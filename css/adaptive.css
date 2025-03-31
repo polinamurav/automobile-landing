@@ -222,6 +222,7 @@
     .main-content {
         background-size: 95%;
         padding: 34px 0 190px;
+        animation: none;
     }
 
     .reviews-title {
