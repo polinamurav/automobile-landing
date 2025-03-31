@@ -33,21 +33,32 @@ themeToggleButton.addEventListener("click", () => {
 const track = document.querySelector(".reviews-track");
 const prev = document.querySelector(".move-backward");
 const next = document.querySelector(".move-forward");
+const slides = document.querySelectorAll(".review-item");
+const slideWidth = slides[0].offsetWidth + 24; // Учитываем gap
 let index = 0;
-const slideWidth = document.querySelector(".review-item").offsetWidth + 20;
+let isAnimating = false;
+
+function slideTo(newIndex) {
+    if (isAnimating) return;
+    isAnimating = true;
+    index = (newIndex + slides.length) % slides.length;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    setTimeout(() => (isAnimating = false), 500); // Задержка для плавности
+}
+
+let autoSlide = setInterval(() => slideTo(index + 1), 3000);
 
 next.addEventListener("click", () => {
-    index++;
-    if (index >= document.querySelectorAll(".review-item").length) {
-        index = 0;
-    }
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    slideTo(index + 1);
+    resetAutoSlide();
 });
 
 prev.addEventListener("click", () => {
-    index--;
-    if (index < 0) {
-        index = document.querySelectorAll(".review-item").length - 1;
-    }
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    slideTo(index - 1);
+    resetAutoSlide();
 });
+
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => slideTo(index + 1), 3000);
+}
