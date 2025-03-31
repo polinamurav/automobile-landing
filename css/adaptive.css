@@ -284,4 +284,11 @@
     .footer-menu {
         margin-left: 0;
     }
+
+    .review-item {
+        width: 102%;
+        height: 330px;
+        min-width: 100%;
+        padding: 15px;
+    }
 }

@@ -28,3 +28,26 @@ themeToggleButton.addEventListener("click", () => {
     sunIcon.style.display = sunIcon.style.display === "none" ? "inline-block" : "none";
     moonIcon.style.display = moonIcon.style.display === "none" ? "inline-block" : "none";
 });
+
+
+const track = document.querySelector(".reviews-track");
+const prev = document.querySelector(".move-backward");
+const next = document.querySelector(".move-forward");
+let index = 0;
+const slideWidth = document.querySelector(".review-item").offsetWidth + 20;
+
+next.addEventListener("click", () => {
+    index++;
+    if (index >= document.querySelectorAll(".review-item").length) {
+        index = 0;
+    }
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+});
+
+prev.addEventListener("click", () => {
+    index--;
+    if (index < 0) {
+        index = document.querySelectorAll(".review-item").length - 1;
+    }
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+});
