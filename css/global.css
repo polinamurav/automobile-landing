@@ -55,6 +55,7 @@ body.dark-theme {
 
 .button:hover {
     box-shadow: 0 10px 30px 0 rgba(22, 19, 0, 0.21);
+    background-color: #f1d159;
 }
 
 .menu ul {
@@ -104,4 +105,10 @@ body.dark-theme {
     background: transparent;
     border: 1px solid #fcdc55;
     border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.theme:hover {
+    border: 1px solid #c4ac46;
+    background-color: #313131;
 }

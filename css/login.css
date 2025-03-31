@@ -76,6 +76,13 @@ body.dark-theme .auth-link a {
     text-decoration: none;
     margin-left: 7px;
     color: #071739;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+.auth-link a:hover {
+    border-bottom: 2px solid #FCDC55;
 }
 
 @media (max-width: 1024px) {
