@@ -123,7 +123,6 @@ body.dark-theme .review-item {
 
 .about-info-description {
     font-size: 24px;
-    letter-spacing: 0.1em;
     text-transform: capitalize;
     text-align: justify;
     margin-bottom: 30px;
@@ -390,10 +389,23 @@ body.dark-theme .review-item {
     display: block;
     text-decoration: none;
     color: #000000;
+    transition: all .3s;
 }
 
 .contacts-body a {
     text-decoration: none;
+}
+
+.contacts-body:hover {
+    color: #fcdc55;
+}
+
+.contacts-body a svg path {
+    transition: fill 0.3s ease-in-out;
+}
+
+.contacts-body a svg:hover path {
+    fill: #fcdc55;
 }
 
 .contacts-block.contacts-social .contacts-body a:not(:last-child) {

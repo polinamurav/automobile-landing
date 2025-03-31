@@ -13,6 +13,10 @@
     src: url("../fonts/Poppinspoppins-semiboldmedium.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins, sans-serif;
     background-color: #F5F5F5;
@@ -46,6 +50,7 @@ body.dark-theme {
     text-align: center;
     transition: all .3s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button:hover {
