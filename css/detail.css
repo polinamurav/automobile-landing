@@ -1,20 +1,3 @@
-body.dark-theme .detail-text h1, body.dark-theme .detail-text h3 {
-    color: #ffffff;
-}
-
-body.dark-theme .comments-item-actions-complaint svg path, body.dark-theme .comments-item-actions-reaction svg path {
-    fill: #ffffff;
-}
-
-body.dark-theme .comment-textarea {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-}
-
-body.dark-theme .comment-textarea::placeholder {
-    color: #ffffff;
-}
-
 .detail {
     padding-top: 77px;
     padding-bottom: 63px;
@@ -45,7 +28,6 @@ body.dark-theme .comment-textarea::placeholder {
     font-weight: 500;
     font-size: 16px;
 }
-
 
 .detail-product-header {
     display: flex;
@@ -124,7 +106,7 @@ body.dark-theme .comment-textarea::placeholder {
         font-weight: 400;
         font-size: 38px;
         line-height: 130%;
-        color: #071739;
+        color: var(--color-blue);
         max-width: 607px;
     }
 
@@ -144,7 +126,7 @@ body.dark-theme .comment-textarea::placeholder {
         font-weight: 500;
         font-size: 20px;
         line-height: 130%;
-        color: #071739;
+        color: var(--color-blue);
     }
 }
 
@@ -165,7 +147,8 @@ body.dark-theme .comment-textarea::placeholder {
 }
 
 .comment-textarea {
-    border: 2px solid #000000;
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
     border-radius: 3px;
     padding: 20px;
     width: 818px;
@@ -180,7 +163,7 @@ body.dark-theme .comment-textarea::placeholder {
 }
 
 .comment-textarea::placeholder {
-    color: #000000;
+    color: var(--color-text);
 }
 
 .comments .button {
@@ -253,10 +236,26 @@ body.dark-theme .comment-textarea::placeholder {
     cursor: pointer;
 }
 
+.comments-item-actions-complaint svg path, .comments-item-actions-reaction svg path {
+    stroke: var(--color-text);
+    transition: all .3s linear;
+}
+
+.comments-item-actions-complaint svg:hover path, .comments-item-actions-reaction svg:hover path {
+    stroke: var(--color-accent);
+}
+
 .comments-more {
-    display: flex;
+    display: inline-block;
     align-items: center;
     cursor: pointer;
+    color: var(--color-blue);
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.comments-more:hover {
+    color: var(--color-accent);
 }
 
 .comments-more span {
@@ -264,6 +263,10 @@ body.dark-theme .comment-textarea::placeholder {
     font-family: Monsterrat, sans-serif;
     font-weight: 500;
     font-size: 20px;
+}
+
+.comments-more svg path {
+    fill: var(--color-blue);
 }
 
 .detail-content-actions {

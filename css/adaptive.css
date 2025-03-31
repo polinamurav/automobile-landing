@@ -137,6 +137,7 @@
     }
     .contacts .container {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .contacts-map {

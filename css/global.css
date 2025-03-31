@@ -1,3 +1,19 @@
+body {
+    --color-bg: #F5F5F5;
+    --color-accent: #fcdc55;
+    --color-blue: #071739;
+    --color-text: #000000;
+    --color-text-light: #ffffff;
+}
+
+body.dark-theme {
+    --color-bg: #252628;
+    --color-accent: #fcdc55;
+    --color-blue: #ffffff;
+    --color-text: #ffffff;
+    --color-text-light: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +35,9 @@ html {
 
 body {
     font-family: Poppins, sans-serif;
-    background-color: #F5F5F5;
-    color: #071739;
+    background-color: var(--color-bg);
+    color: var(--color-blue);
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.dark-theme {
-    background-color: #252628;
-    color: #ffffff;
 }
 
 .container {
@@ -43,7 +54,7 @@ body.dark-theme {
     width: 300px;
     height: 60px;
     padding: 10px 15px;
-    background-color: #fcdc55;
+    background-color: var(--color-accent);
     box-shadow: 0 10px 30px 0 rgba(22, 19, 0, 0.1);
     line-height: 16px;
     box-sizing: border-box;
@@ -75,24 +86,24 @@ body.dark-theme {
 .menu-item a {
     font-size: 14px;
     font-family: GilroyMedium, sans-serif;
-    color: #ffffff;
+    color: var(--color-text-light);
     text-decoration: none;
     cursor: pointer;
 }
 
 .menu-item:hover {
-    border-bottom: 2px solid #FCDC55;
+    border-bottom: 2px solid var(--color-accent);
 }
 
 .input {
     box-sizing: border-box;
     padding: 17px 20px;
-    border: 2px solid #fcdc55;
+    border: 2px solid var(--color-accent);
     border-radius: 3px;
     font-family: "Monsterrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #071739;
+    color: var(--color-blue);
     outline: none;
 }
 
@@ -103,7 +114,7 @@ body.dark-theme {
 .theme {
     cursor: pointer;
     background: transparent;
-    border: 1px solid #fcdc55;
+    border: 1px solid var(--color-accent);
     border-radius: 5px;
     transition: all .3s linear;
 }
