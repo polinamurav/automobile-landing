@@ -1,3 +1,20 @@
+body.dark-theme .detail-text h1, body.dark-theme .detail-text h3 {
+    color: #ffffff;
+}
+
+body.dark-theme .comments-item-actions-complaint svg path, body.dark-theme .comments-item-actions-reaction svg path {
+    fill: #ffffff;
+}
+
+body.dark-theme .comment-textarea {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+body.dark-theme .comment-textarea::placeholder {
+    color: #ffffff;
+}
+
 .detail {
     padding-top: 77px;
     padding-bottom: 63px;
@@ -27,7 +44,6 @@
 .breadcrumbs-title {
     font-weight: 500;
     font-size: 16px;
-    color: #071739;
 }
 
 
@@ -47,7 +63,6 @@
     font-weight: 400;
     font-size: 38px;
     line-height: 130%;
-    color: #071739;
     margin-bottom: 40px;
     margin-top: 0;
 }
@@ -57,7 +72,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
-    color: #000000;
 }
 
 .detail-images {
@@ -100,7 +114,6 @@
     justify-content: space-between;
 }
 
-
 .detail-text {
     max-width: 818px;
 
@@ -122,7 +135,6 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 130%;
-        color: #000000;
     }
 
     h3 {
@@ -145,7 +157,6 @@
     font-size: 38px;
     line-height: 130%;
     letter-spacing: 0.05em;
-    color: #071739;
     margin-bottom: 40px;
 }
 
@@ -159,14 +170,13 @@
     padding: 20px;
     width: 818px;
     height: 248px;
-    background: #fff;
+    background: transparent;
     box-sizing: border-box;
     outline: none;
     margin-bottom: 20px;
     font-family: Monsterrat, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #071739;
 }
 
 .comment-textarea::placeholder {
@@ -208,7 +218,6 @@
 
 .comments-item-info-name {
     font-size: 18px;
-    color: #071739;
     margin-bottom: 10px;
 }
 
@@ -221,7 +230,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #071739;
     margin-bottom: 39px;
 }
 
@@ -256,7 +264,6 @@
     font-family: Monsterrat, sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: #071739;
 }
 
 .detail-content-actions {
@@ -267,7 +274,6 @@
     font-family: Lora, sans-serif;
     font-weight: 400;
     font-size: 26px;
-    color: #071739;
     margin-bottom: 20px;
     text-align: end;
     margin-right: 98px;

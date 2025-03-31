@@ -1,3 +1,19 @@
+body.dark-theme .contacts-body {
+    color: #ffffff;
+}
+
+body.dark-theme .swiper-button-prev svg path, .swiper-button-next svg path {
+    fill: #ffffff;
+}
+
+body.dark-theme .contacts-body a svg path {
+    fill: #ffffff;
+}
+
+body.dark-theme .review-item {
+    border: 2px solid #ffffff;
+}
+
 .main {
     background-color: #000000;
     padding-bottom: 144px;
@@ -91,7 +107,6 @@
     font-size: 60px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #000;
     margin-bottom: 60px;
     text-align: center;
 }
@@ -111,7 +126,6 @@
     letter-spacing: 0.1em;
     text-transform: capitalize;
     text-align: justify;
-    color: #000;
     margin-bottom: 30px;
 }
 
@@ -124,7 +138,6 @@
     font-size: 48px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #000;
     margin-bottom: 30px;
 }
 
@@ -153,7 +166,6 @@
     height: 70px;
     text-align: center;
     font-family: PoppinsSemiBold, sans-serif;
-    color: #000000;
     vertical-align: bottom;
     cursor: pointer;
     transition: .5s;
@@ -174,7 +186,6 @@
 .about-info-item-title {
     font-size: 20px;
     font-family: PoppinsSemiBold, sans-serif;
-    color: #000000;
     cursor: pointer;
     max-width: 306px;
     margin-left: 15px;
@@ -187,7 +198,6 @@
 .popular-title {
     font-family: PoppinsSemiBold, sans-serif;
     font-size: 50px;
-    color: #000;
     text-align: center;
     margin-bottom: 18px;
 }
@@ -236,7 +246,6 @@
     font-family: PoppinsSemiBold, sans-serif;
     font-size: 50px;
     letter-spacing: 0.05em;
-    color: #071739;
     margin-bottom: 70px;
 }
 
@@ -302,7 +311,6 @@
     font-family: PoppinsSemiBold, sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #071739;
 }
 
 .review-item-text {
@@ -310,7 +318,6 @@
     margin-top: 15px;
     font-size: 16px;
     line-height: 140%;
-    color: #000000;
 }
 
 .reviews-arrows {
@@ -338,11 +345,10 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-    content: ''; /* Убираем текст "prev"/"next" */
-    font-size: 16px; /* Уменьшаем размер, если нужно */
+    content: '';
+    font-size: 16px;
     display: block;
 }
-
 
 .contacts {
     padding-top: 57px;
@@ -362,7 +368,6 @@
     font-family: PoppinsSemiBold, sans-serif;
     font-size: 38px;
     line-height: 130%;
-    color: #000;
     margin-bottom: 20px;
 }
 
@@ -375,7 +380,6 @@
 .contacts-head {
     font-weight: 500;
     font-size: 20px;
-    color: #071739;
     margin-bottom: 10px;
 }
 
@@ -383,8 +387,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
-    color: #000000;
     display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contacts-body a {
     text-decoration: none;
 }
 

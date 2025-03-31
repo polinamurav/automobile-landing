@@ -16,6 +16,13 @@
 body {
     font-family: Poppins, sans-serif;
     background-color: #F5F5F5;
+    color: #071739;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #252628;
+    color: #ffffff;
 }
 
 .container {
@@ -85,4 +92,11 @@ body {
 
 .input::placeholder {
     color: #a8aba7;
+}
+
+.theme {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #fcdc55;
+    border-radius: 5px;
 }
